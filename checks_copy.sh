@@ -259,4 +259,4 @@ if [[ -n "$USEPROCEDURESCHEMA" ]]; then
 	GLOBALS+=("--use-procedure-schema=$USEPROCEDURESCHEMA")
 fi
 
-docker-entrypoint.sh "${GLOBALS[@]}" pro checks copy "${PARAMS[@]}"
+docker-entrypoint.sh "${GLOBALS[@]}" checks copy "${PARAMS[@]}"
