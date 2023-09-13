@@ -6,7 +6,7 @@ Create a copy of an existing check and provide new customization options for the
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/checks-copy@v4.23.1
+- uses: liquibase-github-actions/checks-copy@v4.23.2
   with:
     # Name of check to configure
     # string
@@ -35,7 +35,7 @@ The liquibase checks copy action accepts all valid liquibase global options as o
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/checks-copy@v4.23.1
+  - uses: liquibase-github-actions/checks-copy@v4.23.2
     with:
       checkName: ""
       headless: true
