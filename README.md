@@ -6,14 +6,14 @@ Create a copy of an existing check and provide new customization options for the
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/checks-copy@v4.25.0
+- uses: liquibase-github-actions/checks-copy@v4.25.1
   with:
     # Name of check to configure
     # string
     # Required
     checkName: ""
 
-    # Allows automatic backup and updating of liquibase.checks.conf file when new quality checks are available. Options: [on|off]
+    # Allows automatic backup and updating of liquibase.checks.conf file when new quality checks are available, or for file format changes. Options: [on|off]
     # string
     # Optional
     autoUpdate: ""
@@ -35,7 +35,7 @@ The liquibase checks copy action accepts all valid liquibase global options as o
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/checks-copy@v4.25.0
+  - uses: liquibase-github-actions/checks-copy@v4.25.1
     with:
       checkName: ""
       headless: true
